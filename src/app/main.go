@@ -46,6 +46,8 @@ func main() {
 
 }
 
+// I found this function in a stackoverflow answer that I'm not finding anymore
+// when I'll find it I'll give appropriate credits to the author
 func GenerateCombinations(alphabet string, length int) <-chan string {
 	c := make(chan string)
 	go func(c chan string) {
